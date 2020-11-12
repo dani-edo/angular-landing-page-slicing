@@ -6,10 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./image-card.component.scss'],
 })
 export class ImageCardComponent implements OnInit {
-  @Input() img = '';
+  @Input() img: string | null = null;
   @Input() title: string | null = null;
-  @Input() person = '';
-  @Input() views = 0;
+  @Input() person: string | null = null;
+  @Input() views: number | null = null;
+  @Input() upload = false;
   constructor() {}
 
   ngOnInit(): void {}

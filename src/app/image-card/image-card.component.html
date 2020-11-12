@@ -1,8 +1,14 @@
-<img [src]="img" alt="image-placeholder" />
+<img *ngIf="img" [src]="img" alt="image-placeholder" />
 <div class="caption">
   <div class="title" *ngIf="title">{{ title }}</div>
   <div class="content">
-    <div class="person">{{ person }}</div>
-    <div class="views">{{ views }} views</div>
+    <div class="person" *ngIf="person">{{ person }}</div>
+    <div class="views" *ngIf="views">{{ views }} views</div>
+  </div>
+</div>
+<div class="upload" *ngIf="upload">
+  <div class="content">
+    <img src="../../assets/img/upload.svg" alt="" />
+    Upload your own video
   </div>
 </div>
