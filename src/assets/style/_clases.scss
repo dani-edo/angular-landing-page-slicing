@@ -1,0 +1,40 @@
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-2 {
+  width: 66.666%;
+}
+
+.col-1 {
+  width: 33.333%;
+}
+
+// margin
+@for $n from 1 through 20 {
+  .m-#{$n} {
+    margin: #{$n * 5}px;
+  }
+  .mt-#{$n},
+  .my-#{$n} {
+    margin-top: #{$n * 5}px;
+  }
+  .mb-#{$n},
+  .my-#{$n} {
+    margin-bottom: #{$n * 5}px;
+  }
+  .mr-#{$n},
+  .mx-#{$n} {
+    margin-right: #{$n * 5}px;
+  }
+  .ml-#{$n},
+  .mx-#{$n} {
+    margin-left: #{$n * 5}px;
+  }
+}
