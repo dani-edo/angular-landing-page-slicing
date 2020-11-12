@@ -1,0 +1,43 @@
+// this is a query helper media to help make responsive functions ------------------------------------------------
+
+@mixin medium_dekstop() {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin small_dekstop() {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mobile_large() {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile_medium() {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin mobile_small() {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin mobile_ultrasmall() {
+  @media screen and (max-width: 319px) {
+    @content;
+  }
+}
