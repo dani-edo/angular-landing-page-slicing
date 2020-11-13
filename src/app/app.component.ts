@@ -3,6 +3,7 @@ import { WindowsType, Timeline, Squares } from '../assets/typescript/type';
 import { videos, people, documents } from '../assets/json/windows.json';
 import { timeline } from '../assets/json/timelines.json';
 import { squares } from '../assets/json/squares.json';
+import { breadcrumbTop } from '../assets/json/breadcrumb.json';
 
 @Component({
   selector: 'app-root',
@@ -15,5 +16,6 @@ export class AppComponent {
   documents: WindowsType = documents;
   timeline: Timeline[] = timeline;
   squares: Squares[] = squares;
+  breadcrumbTop: string[] = breadcrumbTop;
   title = 'angular-landing-page-slicing';
 }

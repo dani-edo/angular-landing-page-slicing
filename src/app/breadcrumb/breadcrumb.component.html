@@ -1,3 +1,5 @@
 <div class="container breadcrumb">
-  Videos / People / Documents / Events / Communities / Favorites / Chanels
+  <div class="item" *ngFor="let item of breadcrumb; index as i">
+    {{ item }} {{ i < breadcrumb.length - 1 ? "/" : "" }}
+  </div>
 </div>

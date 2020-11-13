@@ -4,4 +4,10 @@
   border-bottom: 2px solid white;
   margin-top: 10px;
   word-spacing: 10px;
+  display: flex;
+  .item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 }
