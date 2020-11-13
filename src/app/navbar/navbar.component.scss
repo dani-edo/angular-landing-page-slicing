@@ -1,3 +1,5 @@
+@import "../../assets/style/variables";
+
 nav {
   padding: 15px 0;
   .container {
@@ -22,6 +24,9 @@ nav {
       }
       & > input {
         flex-grow: 1;
+      }
+      button {
+        color: $background;
       }
       .user {
         display: flex;
