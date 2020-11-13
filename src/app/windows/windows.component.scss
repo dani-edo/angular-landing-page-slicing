@@ -1,13 +1,6 @@
 .windows {
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 10px;
     width: 66.666%;
-    .title {
-      font-size: 2rem;
-    }
   }
   .squares {
     display: flex;

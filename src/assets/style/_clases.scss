@@ -4,6 +4,19 @@
   margin-right: auto;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+  .title {
+    font-size: 2rem;
+  }
+  .link {
+    font-size: 0.8rem;
+  }
+}
+
 .row {
   display: flex;
 }

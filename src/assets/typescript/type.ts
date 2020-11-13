@@ -14,3 +14,12 @@ export interface UploadType {
   img: string;
   text: string;
 }
+
+export interface Timeline {
+  img: string;
+  title: string;
+  subtitle: string;
+  desc: string;
+  timeImg: string;
+  timeContent: string;
+}

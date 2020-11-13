@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { WindowsComponent } from './windows/windows.component';
 import { ImageCardComponent } from './image-card/image-card.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ImageCardComponent } from './image-card/image-card.component';
     NavbarComponent,
     BreadcrumbComponent,
     WindowsComponent,
-    ImageCardComponent
+    ImageCardComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
