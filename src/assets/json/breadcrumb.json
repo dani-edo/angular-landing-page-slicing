@@ -7,5 +7,14 @@
     "Communities",
     "Favorites",
     "Chanels"
-  ]
+  ],
+  "breadcrumbBottom": [
+    "About",
+    "For Business",
+    "Suggestions",
+    "Help & FAQs",
+    "Contacs",
+    "Pricing"
+  ],
+  "breadcrumbTnc": ["Privacy", "Terms"]
 }

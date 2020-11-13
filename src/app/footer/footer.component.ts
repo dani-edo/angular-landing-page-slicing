@@ -8,6 +8,8 @@ import { Social } from '../../assets/typescript/type';
 })
 export class FooterComponent implements OnInit {
   @Input() social?: Social[];
+  @Input() breadcrumbBottom: string[] = [];
+  @Input() breadcrumbTnc: string[] = [];
   constructor() {}
 
   ngOnInit(): void {}

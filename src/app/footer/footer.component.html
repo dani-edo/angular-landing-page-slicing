@@ -5,5 +5,16 @@
         <img [src]="item.img" alt="social" />
       </a>
     </div>
+    <app-breadcrumb
+      [breadcrumb]="breadcrumbBottom"
+      class="small"
+    ></app-breadcrumb>
+    <div class="copyright">
+      @Copyright 2013 companyname.inc
+      <app-breadcrumb
+        [breadcrumb]="breadcrumbTnc"
+        class="small no-margin"
+      ></app-breadcrumb>
+    </div>
   </div>
 </footer>

@@ -1,5 +1,6 @@
 footer {
   margin-top: 30px;
+  margin-bottom: 30px;
   .container {
     border-top: 2px solid white;
     .socials {
@@ -20,6 +21,13 @@ footer {
         &:not(:last-child) {
           margin-right: 10px;
         }
+      }
+    }
+    .copyright {
+      font-size: 0.8rem;
+      & > * {
+        margin: 0;
+        padding: 0;
       }
     }
   }

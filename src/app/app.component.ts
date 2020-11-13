@@ -6,9 +6,13 @@ import {
   Social,
 } from '../assets/typescript/type';
 import { videos, people, documents } from '../assets/json/windows.json';
+import {
+  breadcrumbTop,
+  breadcrumbBottom,
+  breadcrumbTnc,
+} from '../assets/json/breadcrumb.json';
 import { timeline } from '../assets/json/timelines.json';
 import { squares } from '../assets/json/squares.json';
-import { breadcrumbTop } from '../assets/json/breadcrumb.json';
 import { social } from '../assets/json/social.json';
 
 @Component({
@@ -24,5 +28,7 @@ export class AppComponent {
   squares: Squares[] = squares;
   breadcrumbTop: string[] = breadcrumbTop;
   social: Social[] = social;
+  breadcrumbBottom: string[] = breadcrumbBottom;
+  breadcrumbTnc: string[] = breadcrumbTnc;
   title = 'angular-landing-page-slicing';
 }
