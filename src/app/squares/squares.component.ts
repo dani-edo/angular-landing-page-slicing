@@ -8,6 +8,7 @@ import { Squares } from '../../assets/typescript/type';
 })
 export class SquaresComponent implements OnInit {
   @Input() squares?: Squares[];
+  @Input() photos: string[] = [];
   constructor() {}
 
   ngOnInit(): void {}

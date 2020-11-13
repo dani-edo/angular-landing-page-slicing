@@ -10,6 +10,7 @@ import { ImageCardComponent } from './image-card/image-card.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { SquaresComponent } from './squares/squares.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,10 @@ import { FooterComponent } from './footer/footer.component';
     ImageCardComponent,
     TimelineComponent,
     SquaresComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

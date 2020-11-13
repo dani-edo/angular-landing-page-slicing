@@ -8,6 +8,7 @@ import { WindowsType } from '../../assets/typescript/type';
 })
 export class WindowsComponent implements OnInit {
   @Input() data?: WindowsType;
+  @Input() photos: string[] = [];
 
   constructor() {}
 

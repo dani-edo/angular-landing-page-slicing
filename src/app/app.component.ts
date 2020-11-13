@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import {
   WindowsType,
   Timeline,
@@ -20,7 +21,7 @@ import { social } from '../assets/json/social.json';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   videos: WindowsType = videos;
   people: WindowsType = people;
   documents: WindowsType = documents;
@@ -30,5 +31,30 @@ export class AppComponent {
   social: Social[] = social;
   breadcrumbBottom: string[] = breadcrumbBottom;
   breadcrumbTnc: string[] = breadcrumbTnc;
+  photos: string[] = [];
   title = 'angular-landing-page-slicing';
+
+  readonly CLIENT_ID =
+    '78e47bffdee0c00cca66e1e3768f02f829fbf1bb16b3a4ddd5b7502953249963';
+  readonly BASE_URL = `https://api.unsplash.com`;
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    this.getPost();
+  }
+
+  getPost(): void {
+    this.http
+      .get(
+        `${this.BASE_URL}/photos/random/?count=30&client_id=${this.CLIENT_ID}`
+      )
+      .subscribe((data) => {
+        const input: string[] = [];
+        Object.entries(data).forEach((e) => {
+          input.push(e[1].urls.small);
+        });
+        this.photos = input;
+      });
+  }
 }

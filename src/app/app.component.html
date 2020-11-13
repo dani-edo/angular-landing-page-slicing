@@ -2,19 +2,28 @@
 <app-breadcrumb [breadcrumb]="breadcrumbTop"></app-breadcrumb>
 <div class="row container mt-md-6">
   <div class="col-2 mr-md-3">
-    <app-windows [data]="videos"></app-windows>
+    <app-windows [data]="videos" [photos]="photos.slice(0, 5)"></app-windows>
   </div>
   <div class="col-1">
-    <app-timeline [timeline]="timeline"></app-timeline>
+    <app-timeline
+      [timeline]="timeline"
+      [photos]="photos.slice(5, 11)"
+    ></app-timeline>
   </div>
 </div>
 <div class="row container mt-md-6">
   <div class="col-2 mr-md-3">
-    <app-windows [data]="people"></app-windows>
-    <app-windows [data]="documents"></app-windows>
+    <app-windows [data]="people" [photos]="photos.slice(11, 16)"></app-windows>
+    <app-windows
+      [data]="documents"
+      [photos]="photos.slice(16, 21)"
+    ></app-windows>
   </div>
   <div class="col-1">
-    <app-squares [squares]="squares"></app-squares>
+    <app-squares
+      [squares]="squares"
+      [photos]="photos.slice(20, 30)"
+    ></app-squares>
   </div>
 </div>
 <app-footer

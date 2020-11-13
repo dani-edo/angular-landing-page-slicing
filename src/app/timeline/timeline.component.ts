@@ -8,6 +8,7 @@ import { Timeline } from '../../assets/typescript/type';
 })
 export class TimelineComponent implements OnInit {
   @Input() timeline?: Timeline[];
+  @Input() photos: string[] = [];
   constructor() {}
 
   ngOnInit(): void {}
