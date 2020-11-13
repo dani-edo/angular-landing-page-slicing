@@ -8,7 +8,7 @@
 </div>
 <div class="upload" *ngIf="upload">
   <div class="content">
-    <img src="../../assets/img/upload.svg" alt="" />
-    Upload your own video
+    <img [src]="upload!.img" [alt]="upload!.text" />
+    {{ upload!.text }}
   </div>
 </div>

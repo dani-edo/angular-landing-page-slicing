@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { UploadType } from '../../assets/typescript/type';
 
 @Component({
   selector: 'app-image-card',
@@ -6,11 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./image-card.component.scss'],
 })
 export class ImageCardComponent implements OnInit {
-  @Input() img: string | null = null;
+  @Input() img?: string;
   @Input() title?: string;
-  @Input() person: string | null = null;
+  @Input() person?: string;
   @Input() views?: number;
-  @Input() upload = false;
+  @Input() upload?: UploadType;
   constructor() {}
 
   ngOnInit(): void {}

@@ -28,6 +28,12 @@
         "person": "John Doe",
         "views": 969,
         "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "upload": {
+          "img": "../../assets/img/upload.svg",
+          "text": "Upload your own video"
+        }
       }
     ]
   },
@@ -56,6 +62,12 @@
       {
         "person": "John Doe",
         "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "upload": {
+          "img": "../../assets/img/eye.svg",
+          "text": "Show your work"
+        }
       }
     ]
   },
@@ -86,6 +98,12 @@
       {
         "person": "2013 Marketing trends",
         "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "upload": {
+          "img": "../../assets/img/share.svg",
+          "text": "Share your document"
+        }
       }
     ]
   }

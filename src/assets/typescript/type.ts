@@ -3,8 +3,14 @@ export interface WindowsType {
   all: string;
   contents: {
     title?: string;
-    person: string;
+    person?: string;
     views?: number;
-    img: string;
+    img?: string;
+    upload?: UploadType;
   }[];
+}
+
+export interface UploadType {
+  img: string;
+  text: string;
 }
