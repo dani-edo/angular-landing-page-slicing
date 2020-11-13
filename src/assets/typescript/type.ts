@@ -23,3 +23,8 @@ export interface Timeline {
   timeImg: string;
   timeContent: string;
 }
+
+export interface Squares {
+  img: string;
+  title: string;
+}

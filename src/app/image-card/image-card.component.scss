@@ -20,6 +20,9 @@
     height: 350px;
     object-fit: cover;
   }
+  &.squares img {
+    height: 100px;
+  }
   .caption {
     position: absolute;
     bottom: 0;

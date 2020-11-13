@@ -8,6 +8,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { WindowsComponent } from './windows/windows.component';
 import { ImageCardComponent } from './image-card/image-card.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { SquaresComponent } from './squares/squares.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     BreadcrumbComponent,
     WindowsComponent,
     ImageCardComponent,
-    TimelineComponent
+    TimelineComponent,
+    SquaresComponent
   ],
   imports: [
     BrowserModule,

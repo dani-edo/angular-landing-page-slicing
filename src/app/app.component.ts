@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { WindowsType, Timeline } from '../assets/typescript/type';
+import { WindowsType, Timeline, Squares } from '../assets/typescript/type';
 import { videos, people, documents } from '../assets/json/windows.json';
 import { timeline } from '../assets/json/timelines.json';
+import { squares } from '../assets/json/squares.json';
 
 @Component({
   selector: 'app-root',
@@ -13,5 +14,6 @@ export class AppComponent {
   people: WindowsType = people;
   documents: WindowsType = documents;
   timeline: Timeline[] = timeline;
+  squares: Squares[] = squares;
   title = 'angular-landing-page-slicing';
 }

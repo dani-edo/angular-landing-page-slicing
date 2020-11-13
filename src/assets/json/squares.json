@@ -1,0 +1,44 @@
+{
+  "squares": [
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    },
+    {
+      "img": "../../assets/img/image-placeholder.png",
+      "title": "Google"
+    }
+  ]
+}

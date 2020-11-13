@@ -1,0 +1,12 @@
+<div class="header">
+  <div class="title">Chanels</div>
+  <div class="link">Browse all chanels</div>
+</div>
+<div class="list">
+  <app-image-card
+    *ngFor="let item of squares; index as i"
+    [class]="'small squares' + (i % 2 ? ' ml-2' : '')"
+    [img]="item.img"
+    [person]="item.title"
+  ></app-image-card>
+</div>
