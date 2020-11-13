@@ -2,6 +2,9 @@
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  @include tablet {
+    max-width: calc(100% - 2rem);
+  }
   @include mobile_large {
     max-width: calc(100% - 2rem);
   }
