@@ -6,6 +6,8 @@
   word-spacing: 10px;
   display: flex;
   .item {
+    text-decoration: none;
+    color: white;
     &:not(:last-child) {
       margin-right: 10px;
     }

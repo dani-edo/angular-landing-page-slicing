@@ -28,3 +28,8 @@ export interface Squares {
   img: string;
   title: string;
 }
+
+export interface Social {
+  link: string;
+  img: string;
+}

@@ -9,6 +9,7 @@ import { WindowsComponent } from './windows/windows.component';
 import { ImageCardComponent } from './image-card/image-card.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { SquaresComponent } from './squares/squares.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SquaresComponent } from './squares/squares.component';
     WindowsComponent,
     ImageCardComponent,
     TimelineComponent,
-    SquaresComponent
+    SquaresComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

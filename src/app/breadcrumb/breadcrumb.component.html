@@ -1,5 +1,5 @@
 <div class="container breadcrumb">
-  <div class="item" *ngFor="let item of breadcrumb; index as i">
+  <a href="#" class="item" *ngFor="let item of breadcrumb; index as i">
     {{ item }} {{ i < breadcrumb.length - 1 ? "/" : "" }}
-  </div>
+  </a>
 </div>

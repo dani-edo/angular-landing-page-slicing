@@ -1,0 +1,26 @@
+footer {
+  margin-top: 30px;
+  .container {
+    border-top: 2px solid white;
+    .socials {
+      display: flex;
+      margin: 20px 0;
+      a.social {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 2px;
+        background-color: white;
+        img {
+          width: 0.75rem;
+        }
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
