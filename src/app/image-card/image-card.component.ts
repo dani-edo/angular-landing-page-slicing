@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ImageCardComponent implements OnInit {
   @Input() img: string | null = null;
-  @Input() title: string | null = null;
+  @Input() title?: string;
   @Input() person: string | null = null;
-  @Input() views: number | null = null;
+  @Input() views?: number;
   @Input() upload = false;
   constructor() {}
 

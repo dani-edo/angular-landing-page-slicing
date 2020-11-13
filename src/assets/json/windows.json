@@ -1,0 +1,92 @@
+{
+  "videos": {
+    "title": "Videos",
+    "all": "Browse all videos",
+    "contents": [
+      {
+        "title": "How to improve your skills",
+        "person": "Waseem Arshad",
+        "views": 1078000,
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "Michael Keliph",
+        "views": 15454,
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "Ahmed yasin",
+        "views": 1984,
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "John Stainer",
+        "views": 2554,
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "John Doe",
+        "views": 969,
+        "img": "../../assets/img/image-placeholder.png"
+      }
+    ]
+  },
+  "people": {
+    "title": "People",
+    "all": "View all",
+    "contents": [
+      {
+        "title": "Waseem Arshad",
+        "person": "User interface designer",
+        "views": 1873487,
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "Michael Keliph",
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "Ahmed yasin",
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "John Stainer",
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "John Doe",
+        "img": "../../assets/img/image-placeholder.png"
+      }
+    ]
+  },
+  "documents": {
+    "title": "documents",
+    "all": "Browse all documents",
+    "contents": [
+      {
+        "title": "Mobile ui & ux guide 2013",
+        "person": "By william makhroja",
+        "views": 1873487,
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "HTML5 and usage",
+        "views": 1873487,
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "How to become an expert?",
+        "views": 1873487,
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "2013 Marketing trends",
+        "img": "../../assets/img/image-placeholder.png"
+      },
+      {
+        "person": "2013 Marketing trends",
+        "img": "../../assets/img/image-placeholder.png"
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { WindowsType } from '../../assets/typescript/type';
 
 @Component({
   selector: 'app-windows',
@@ -6,8 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./windows.component.scss'],
 })
 export class WindowsComponent implements OnInit {
-  @Input() title = '';
-  @Input() all = '';
+  @Input() data?: WindowsType;
 
   constructor() {}
 

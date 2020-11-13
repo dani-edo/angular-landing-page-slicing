@@ -1,44 +1,48 @@
 <div class="windows">
   <div class="header">
-    <div class="title">{{ title }}</div>
-    <div class="link">{{ all }}</div>
+    <div class="title" *ngIf="data!.title">{{ data!.title }}</div>
+    <div class="link" *ngIf="data!.all">{{ data!.all }}</div>
   </div>
   <div class="squares">
     <div class="square-2">
       <app-image-card
-        img="../../assets/img/image-placeholder.png"
         class="big"
-        title="How to improve your skills"
-        person="Albert Sujono"
-        [views]="1234"
+        [img]="data!.contents[0].img"
+        [title]="data!.contents[0].title"
+        [person]="data!.contents[0].person"
+        [views]="data!.contents[0].views"
       ></app-image-card>
     </div>
     <div class="square-1">
       <app-image-card
-        img="../../assets/img/image-placeholder.png"
         class="small"
-        person="Albert Sujono"
-        [views]="1234"
+        [img]="data!.contents[1].img"
+        [title]="data!.contents[1].title"
+        [person]="data!.contents[1].person"
+        [views]="data!.contents[1].views"
       ></app-image-card>
       <app-image-card
-        img="../../assets/img/image-placeholder.png"
         class="small"
-        person="Albert Sujono"
-        [views]="1234"
+        [img]="data!.contents[2].img"
+        [title]="data!.contents[2].title"
+        [person]="data!.contents[2].person"
+        [views]="data!.contents[2].views"
       ></app-image-card>
     </div>
     <div class="square-2">
       <app-image-card
-        img="../../assets/img/image-placeholder.png"
         class="small"
-        person="Albert Sujono"
-        [views]="1234"
+        [img]="data!.contents[3].img"
+        [title]="data!.contents[3].title"
+        [person]="data!.contents[3].person"
+        [views]="data!.contents[3].views"
       ></app-image-card>
       <app-image-card
-        img="../../assets/img/image-placeholder.png"
         class="small"
-        person="Albert Sujono"
-        [views]="1234"
+        [img]="data!.contents[4].img"
+        [title]="data!.contents[4].title"
+        [person]="data!.contents[4].person"
+        [views]="data!.contents[4].views"
       ></app-image-card>
     </div>
     <div class="square-1">

@@ -33,6 +33,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      flex-wrap: wrap;
       .views {
         font-size: 0.75rem;
       }
