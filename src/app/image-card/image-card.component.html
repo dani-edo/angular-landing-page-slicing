@@ -6,9 +6,9 @@
     <div class="views" *ngIf="views">{{ views }} views</div>
   </div>
 </div>
-<div class="upload" *ngIf="upload">
+<a href="#" class="upload" *ngIf="upload">
   <div class="content">
     <img [src]="upload!.img" [alt]="upload!.text" />
     {{ upload!.text }}
   </div>
-</div>
+</a>

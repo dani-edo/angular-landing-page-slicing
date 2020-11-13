@@ -16,7 +16,6 @@ export interface UploadType {
 }
 
 export interface Timeline {
-  img: string;
   title: string;
   subtitle: string;
   desc: string;
@@ -25,7 +24,6 @@ export interface Timeline {
 }
 
 export interface Squares {
-  img: string;
   title: string;
 }
 
