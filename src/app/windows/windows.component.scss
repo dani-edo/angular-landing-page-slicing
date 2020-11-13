@@ -1,20 +1,42 @@
-.windows {
-  .header {
-    width: 66.666%;
-  }
-  .squares {
-    display: flex;
-    flex-wrap: wrap;
-    .square-2 {
-      display: flex;
-      width: calc(66.666% - 5px);
-      margin-right: 10px;
-      margin-bottom: 10px;
+@import "../../assets/style/mixins";
+
+:host {
+  .windows {
+    .header {
+      width: 66.666%;
+      @include mobile_large {
+        width: 100%;
+      }
     }
-    .square-1 {
+    .squares {
       display: flex;
-      width: calc(33.333% - 5px);
-      flex-direction: column;
+      flex-wrap: wrap;
+      .square-2 {
+        display: flex;
+        width: calc(66.666% - 5px);
+        margin-right: 10px;
+        margin-bottom: 10px;
+        @include mobile_large {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      .square-1 {
+        display: flex;
+        width: calc(33.333% - 5px);
+        flex-direction: column;
+        @include mobile_large {
+          width: 100%;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+  &:not(:last-child) {
+    .windows {
+      @include mobile_large {
+        margin-bottom: 3rem;
+      }
     }
   }
 }

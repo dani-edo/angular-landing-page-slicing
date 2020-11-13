@@ -1,4 +1,5 @@
 @import "../../assets/style/variables";
+@import "../../assets/style/mixins";
 
 nav {
   padding: 15px 0;
@@ -6,6 +7,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mobile_large {
+      flex-wrap: wrap;
+    }
     .brand {
       font-weight: bold;
       font-size: 2rem;
@@ -17,6 +21,10 @@ nav {
       width: 100%;
       margin-left: 30px;
       display: flex;
+      @include mobile_large {
+        margin-left: 0;
+        margin-top: 10px;
+      }
       & > * {
         margin-left: 10px;
         border: none;
@@ -24,6 +32,11 @@ nav {
       }
       & > input {
         flex-grow: 1;
+        @include mobile_large {
+          margin-left: 0;
+          flex-grow: 0;
+          width: inherit;
+        }
       }
       button {
         color: $background;

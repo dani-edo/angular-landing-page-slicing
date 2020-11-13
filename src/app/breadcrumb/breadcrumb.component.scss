@@ -1,3 +1,5 @@
+@import "../../assets/style/mixins";
+
 .breadcrumb {
   padding: 10px 0;
   border-top: 2px solid white;
@@ -5,6 +7,7 @@
   margin: 10px auto;
   word-spacing: 10px;
   display: flex;
+  flex-wrap: wrap;
   .item {
     text-decoration: none;
     color: white;
@@ -18,6 +21,9 @@
     .breadcrumb {
       border: none;
       font-size: 0.8rem;
+      @include mobile_large {
+        margin: 0;
+      }
     }
   }
   &.no-margin {
