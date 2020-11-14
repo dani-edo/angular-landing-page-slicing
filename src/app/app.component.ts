@@ -6,15 +6,15 @@ import {
   Squares,
   Social,
 } from '../assets/typescript/type';
-import { videos, people, documents } from '../assets/json/windows.json';
+import { videos, people, documents } from '../assets/data/windows';
 import {
   breadcrumbTop,
   breadcrumbBottom,
   breadcrumbTnc,
-} from '../assets/json/breadcrumb.json';
-import { timeline } from '../assets/json/timelines.json';
-import { squares } from '../assets/json/squares.json';
-import { social } from '../assets/json/social.json';
+} from '../assets/data/breadcrumb';
+import { timeline } from '../assets/data/timelines';
+import { squares } from '../assets/data/squares';
+import { social } from '../assets/data/social';
 
 @Component({
   selector: 'app-root',
