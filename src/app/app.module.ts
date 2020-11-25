@@ -11,6 +11,8 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { SquaresComponent } from './squares/squares.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     TimelineComponent,
     SquaresComponent,
     FooterComponent,
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

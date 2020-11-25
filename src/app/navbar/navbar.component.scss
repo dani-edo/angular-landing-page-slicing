@@ -45,6 +45,8 @@ nav {
       }
       .user {
         display: flex;
+        text-decoration: none;
+        color: unset;
         button {
           width: 34px;
           display: flex;
