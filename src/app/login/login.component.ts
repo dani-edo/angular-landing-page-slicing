@@ -20,20 +20,18 @@ export class LoginComponent implements OnInit {
 
   initForm(): void {
     this.formGroup = new FormGroup({
-      email: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required]),
     });
   }
   loginProcess(): void {
     if (this.formGroup.valid) {
-      this.authService.login(this.formGroup.value).subscribe((result) => {
-        if (result.success) {
-          console.log(result);
+      this.authService.login(this.formGroup.value).subscribe(
+        (result) => {
           alert(result.message);
-        } else {
-          alert(result.message);
-        }
-      });
+        },
+        (err) => alert(err.message)
+      );
     } else {
       alert('Form not valid!');
     }
