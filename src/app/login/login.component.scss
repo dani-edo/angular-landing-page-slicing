@@ -1,0 +1,41 @@
+@import "../../assets/style/variables";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    max-width: calc(100vw - 20px);
+    border-radius: 5px;
+    height: min-content;
+    padding: 2rem;
+    h1 {
+      margin-top: 0;
+    }
+    & > * {
+      color: $background;
+    }
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid $background;
+      border-radius: 3px;
+    }
+    button {
+      background-color: $background;
+      color: white;
+      border-radius: 3px;
+      border: none;
+      padding: 10px;
+      width: max-content;
+      margin-left: auto;
+    }
+  }
+}

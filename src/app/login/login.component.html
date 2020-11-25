@@ -1,1 +1,18 @@
-<p>login page!</p>
+<form [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+  <h1>Login</h1>
+  <input
+    type="text"
+    name="email"
+    id=""
+    placeholder="Email"
+    formControlName="email"
+  />
+  <input
+    type="password"
+    name="password"
+    id=""
+    placeholder="Password"
+    formControlName="password"
+  />
+  <button type="submit">Submit</button>
+</form>
