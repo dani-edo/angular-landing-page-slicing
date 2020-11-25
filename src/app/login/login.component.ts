@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthServiceService } from '../auth-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import { AuthServiceService } from '../auth-service.service';
 export class LoginComponent implements OnInit {
   formGroup: FormGroup;
 
-  constructor(private authService: AuthServiceService) {
+  constructor(private authService: AuthServiceService, private router: Router) {
     this.formGroup = new FormGroup({});
   }
 
@@ -29,6 +30,8 @@ export class LoginComponent implements OnInit {
       this.authService.login(this.formGroup.value).subscribe(
         (result) => {
           alert(result.message);
+          localStorage.setItem('token', result.token);
+          this.router.navigate(['/']);
         },
         (err) => alert(err.message)
       );

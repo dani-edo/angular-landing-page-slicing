@@ -31,3 +31,8 @@ export interface Social {
   link: string;
   img: string;
 }
+
+export interface Login {
+  email: string;
+  password: string;
+}
