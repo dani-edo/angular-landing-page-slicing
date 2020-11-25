@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         }
       });
     } else {
-      console.log('Form not valid!');
+      alert('Form not valid!');
     }
   }
 }
