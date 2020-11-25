@@ -14,8 +14,11 @@ export class AuthServiceService {
     return this.http.post(`${baseUrl}/user/login`, data);
   }
 
-  loggedIn(): boolean {
-    return !!localStorage.getItem('token');
+  loggedIn(): Observable<any> {
+    return this.http.post(
+      `${baseUrl}/user/check-auth`,
+      localStorage.getItem('token')
+    );
   }
 
   getToken(): string | null {
