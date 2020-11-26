@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from './token-interceptor.service';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TokenInterceptorService } from './token-interceptor.service';
     FooterComponent,
     LoginComponent,
     HomeComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,
