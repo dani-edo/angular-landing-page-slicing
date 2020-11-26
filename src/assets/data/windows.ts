@@ -25,7 +25,7 @@ export const videos = {
     },
     {
       upload: {
-        img: '../../assets/img/upload.svg',
+        img: 'assets/img/upload.svg',
         text: 'Upload your own video',
       },
     },
@@ -55,7 +55,7 @@ export const people = {
     },
     {
       upload: {
-        img: '../../assets/img/eye.svg',
+        img: 'assets/img/eye.svg',
         text: 'Show your work',
       },
     },
@@ -87,7 +87,7 @@ export const documents = {
     },
     {
       upload: {
-        img: '../../assets/img/share.svg',
+        img: 'assets/img/share.svg',
         text: 'Share your document',
       },
     },

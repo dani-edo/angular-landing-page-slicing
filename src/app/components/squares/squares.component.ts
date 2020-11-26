@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Squares } from '../../../assets/typescript/type';
+import { Squares } from 'src/assets/typescript/type';
 
 @Component({
   selector: 'app-squares',

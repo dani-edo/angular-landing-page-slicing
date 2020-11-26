@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Social } from '../../../assets/typescript/type';
+import { Social } from 'src/assets/typescript/type';
 
 @Component({
   selector: 'app-footer',

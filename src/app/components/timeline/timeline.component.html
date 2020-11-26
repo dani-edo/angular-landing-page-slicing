@@ -5,7 +5,7 @@
 <div class="list">
   <div class="card-list" *ngFor="let item of timeline; index as i">
     <img
-      [src]="photos[i] ? photos[i] : '../../assets/img/notfound.png'"
+      [src]="photos[i] ? photos[i] : 'assets/img/notfound.png'"
       [alt]="item.title"
     />
     <div class="label">
