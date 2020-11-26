@@ -6,16 +6,16 @@ import {
   Timeline,
   Squares,
   Social,
-} from '../../assets/typescript/type';
-import { videos, people, documents } from '../../assets/data/windows';
+} from '../../../assets/typescript/type';
+import { videos, people, documents } from '../../../assets/data/windows';
 import {
   breadcrumbTop,
   breadcrumbBottom,
   breadcrumbTnc,
-} from '../../assets/data/breadcrumb';
-import { timeline } from '../../assets/data/timelines';
-import { squares } from '../../assets/data/squares';
-import { social } from '../../assets/data/social';
+} from '../../../assets/data/breadcrumb';
+import { timeline } from '../../../assets/data/timelines';
+import { squares } from '../../../assets/data/squares';
+import { social } from '../../../assets/data/social';
 
 @Component({
   selector: 'app-home',

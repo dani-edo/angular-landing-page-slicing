@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Timeline } from '../../assets/typescript/type';
+import { Timeline } from '../../../assets/typescript/type';
 
 @Component({
   selector: 'app-timeline',

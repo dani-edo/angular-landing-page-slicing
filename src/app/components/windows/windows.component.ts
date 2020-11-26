@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { WindowsType } from '../../assets/typescript/type';
+import { WindowsType } from '../../../assets/typescript/type';
 
 @Component({
   selector: 'app-windows',

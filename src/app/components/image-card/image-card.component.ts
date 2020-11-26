@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { UploadType } from '../../assets/typescript/type';
+import { UploadType } from '../../../assets/typescript/type';
 
 @Component({
   selector: 'app-image-card',
