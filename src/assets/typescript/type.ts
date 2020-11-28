@@ -36,3 +36,7 @@ export interface Login {
   email: string;
   password: string;
 }
+
+export interface PhotosState {
+  readonly list: string[];
+}

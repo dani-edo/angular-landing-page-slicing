@@ -18,6 +18,11 @@ import { AuthGuard } from './auth/auth.guard';
 import { TokenInterceptorService } from './auth/token-interceptor.service';
 import { DetailComponent } from './pages/detail/detail.component';
 
+import { StoreModule } from '@ngrx/store';
+import { reducer } from './store/reducer';
+import { effects } from './store/effects';
+import { EffectsModule } from '@ngrx/effects';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +43,10 @@ import { DetailComponent } from './pages/detail/detail.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    StoreModule.forRoot({
+      list: reducer,
+    } as any),
+    EffectsModule.forRoot(effects as any),
   ],
   providers: [
     AuthGuard,
