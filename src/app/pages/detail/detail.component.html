@@ -1,1 +1,3 @@
-<img [src]="photo" alt="Detail Photo" /> <a routerLink="/">Home</a>
+<div class="loading" *ngIf="loading">Loading...</div>
+<img [src]="photo" alt="Detail Photo" *ngIf="!loading" />
+<a routerLink="/">Home</a>

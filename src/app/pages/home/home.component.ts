@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Store } from '@ngrx/store';
 import { PhotosState, Photos } from 'src/assets/typescript/type';
 import { Observable } from 'rxjs';
-import * as Actions from 'src/app/store/actions';
 
 import {
   WindowsType,
@@ -26,7 +25,7 @@ import { social } from 'src/assets/data/social';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   videos: WindowsType = videos;
   people: WindowsType = people;
   documents: WindowsType = documents;
@@ -42,9 +41,5 @@ export class HomeComponent implements OnInit {
   constructor(private store: Store<PhotosState>) {
     const data: Observable<Photos[]> = this.store.select('list');
     data.subscribe((e) => (this.photos = e));
-  }
-
-  ngOnInit(): void {
-    this.store.dispatch(new Actions.GetData());
   }
 }

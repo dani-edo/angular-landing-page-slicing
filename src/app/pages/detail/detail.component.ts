@@ -9,7 +9,8 @@ import { UNSPLASH_ID, UNSPLASH_URL } from 'src/environments/environment';
   styleUrls: ['./detail.component.scss'],
 })
 export class DetailComponent implements OnInit {
-  photo = 'assets/img/notfound.png';
+  photo = '';
+  loading = true;
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
 
   ngOnInit(): void {
@@ -17,6 +18,15 @@ export class DetailComponent implements OnInit {
       .get(
         `${UNSPLASH_URL}/photos/${this.route.snapshot.params.id}?client_id=${UNSPLASH_ID}`
       )
-      .subscribe((e: any) => (this.photo = e.urls.regular));
+      .subscribe(
+        (e: any) => {
+          this.photo = e.urls.regular;
+          this.loading = false;
+        },
+        () => {
+          this.photo = 'assets/img/notfound.png';
+          this.loading = false;
+        }
+      );
   }
 }
