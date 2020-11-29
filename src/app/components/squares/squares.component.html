@@ -6,7 +6,7 @@
   <app-image-card
     *ngFor="let item of squares; index as i"
     [class]="'small squares' + (i % 2 ? ' ml-2' : '')"
-    [img]="photos[i] ? photos[i] : 'assets/img/notfound.png'"
+    [img]="photos[i] ? photos[i].url : 'assets/img/notfound.png'"
     [person]="item.title"
   ></app-image-card>
 </div>

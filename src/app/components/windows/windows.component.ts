@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { WindowsType } from 'src/assets/typescript/type';
+import { WindowsType, Photos } from 'src/assets/typescript/type';
 
 @Component({
   selector: 'app-windows',
@@ -8,7 +8,7 @@ import { WindowsType } from 'src/assets/typescript/type';
 })
 export class WindowsComponent implements OnInit {
   @Input() data?: WindowsType;
-  @Input() photos: string[] = [];
+  @Input() photos: Photos[] = [];
 
   constructor() {}
 

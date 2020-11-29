@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Store } from '@ngrx/store';
-import { PhotosState } from 'src/assets/typescript/type';
+import { PhotosState, Photos } from 'src/assets/typescript/type';
 import { Observable } from 'rxjs';
 import * as Actions from 'src/app/store/actions';
 
@@ -36,11 +36,11 @@ export class HomeComponent implements OnInit {
   social: Social[] = social;
   breadcrumbBottom: string[] = breadcrumbBottom;
   breadcrumbTnc: string[] = breadcrumbTnc;
-  photos: string[] = [];
+  photos: Photos[] = [];
   title = 'angular-landing-page-slicing';
 
   constructor(private store: Store<PhotosState>) {
-    const data: Observable<string[]> = this.store.select('list');
+    const data: Observable<Photos[]> = this.store.select('list');
     data.subscribe((e) => (this.photos = e));
   }
 

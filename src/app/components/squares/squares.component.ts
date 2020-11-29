@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Squares } from 'src/assets/typescript/type';
+import { Squares, Photos } from 'src/assets/typescript/type';
 
 @Component({
   selector: 'app-squares',
@@ -8,7 +8,7 @@ import { Squares } from 'src/assets/typescript/type';
 })
 export class SquaresComponent implements OnInit {
   @Input() squares?: Squares[];
-  @Input() photos: string[] = [];
+  @Input() photos: Photos[] = [];
   constructor() {}
 
   ngOnInit(): void {}

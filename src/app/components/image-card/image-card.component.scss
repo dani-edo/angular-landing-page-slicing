@@ -30,6 +30,12 @@
   &.squares img {
     height: 100px;
   }
+  a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+  }
   .caption {
     position: absolute;
     bottom: 0;

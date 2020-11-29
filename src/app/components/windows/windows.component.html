@@ -7,7 +7,8 @@
     <div class="square-2">
       <app-image-card
         class="big"
-        [img]="photos[0] ? photos[0] : 'assets/img/notfound.png'"
+        [img]="photos[0] ? photos[0].url : 'assets/img/notfound.png'"
+        [id]="photos[0] ? photos[0].id : ''"
         [title]="data!.contents[0].title"
         [person]="data!.contents[0].person"
         [views]="data!.contents[0].views"
@@ -16,14 +17,16 @@
     <div class="square-1">
       <app-image-card
         class="small"
-        [img]="photos[1] ? photos[1] : 'assets/img/notfound.png'"
+        [img]="photos[1] ? photos[1].url : 'assets/img/notfound.png'"
+        [id]="photos[1] ? photos[1].id : ''"
         [title]="data!.contents[1].title"
         [person]="data!.contents[1].person"
         [views]="data!.contents[1].views"
       ></app-image-card>
       <app-image-card
         class="small"
-        [img]="photos[2] ? photos[2] : 'assets/img/notfound.png'"
+        [img]="photos[2] ? photos[2].url : 'assets/img/notfound.png'"
+        [id]="photos[2] ? photos[2].id : ''"
         [title]="data!.contents[2].title"
         [person]="data!.contents[2].person"
         [views]="data!.contents[2].views"
@@ -32,14 +35,16 @@
     <div class="square-2">
       <app-image-card
         class="small"
-        [img]="photos[3] ? photos[3] : 'assets/img/notfound.png'"
+        [img]="photos[3] ? photos[3].url : 'assets/img/notfound.png'"
+        [id]="photos[3] ? photos[3].id : ''"
         [title]="data!.contents[3].title"
         [person]="data!.contents[3].person"
         [views]="data!.contents[3].views"
       ></app-image-card>
       <app-image-card
         class="small"
-        [img]="photos[4] ? photos[4] : 'assets/img/notfound.png'"
+        [img]="photos[4] ? photos[4].url : 'assets/img/notfound.png'"
+        [id]="photos[4] ? photos[4].id : ''"
         [title]="data!.contents[4].title"
         [person]="data!.contents[4].person"
         [views]="data!.contents[4].views"

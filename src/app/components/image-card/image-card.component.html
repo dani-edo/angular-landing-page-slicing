@@ -1,11 +1,13 @@
-<img *ngIf="img" [src]="img" alt="image-placeholder" />
-<div class="caption">
-  <div class="title" *ngIf="title">{{ title }}</div>
-  <div class="content">
-    <div class="person" *ngIf="person">{{ person }}</div>
-    <div class="views" *ngIf="views">{{ views }} views</div>
+<a [routerLink]="'detail/' + id" *ngIf="!upload">
+  <img *ngIf="img" [src]="img" alt="image-placeholder" />
+  <div class="caption">
+    <div class="title" *ngIf="title">{{ title }}</div>
+    <div class="content">
+      <div class="person" *ngIf="person">{{ person }}</div>
+      <div class="views" *ngIf="views">{{ views }} views</div>
+    </div>
   </div>
-</div>
+</a>
 <a href="#" class="upload" *ngIf="upload">
   <div class="content">
     <img [src]="upload!.img" [alt]="upload!.text" />

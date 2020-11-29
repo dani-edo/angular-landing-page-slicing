@@ -12,6 +12,7 @@ export class ImageCardComponent implements OnInit {
   @Input() person?: string;
   @Input() views?: number;
   @Input() upload?: UploadType;
+  @Input() id = '';
   constructor() {}
 
   ngOnInit(): void {}

@@ -37,6 +37,10 @@ export interface Login {
   password: string;
 }
 
+export interface Photos {
+  id: string;
+  url: string;
+}
 export interface PhotosState {
-  readonly list: string[];
+  readonly list: Photos[];
 }

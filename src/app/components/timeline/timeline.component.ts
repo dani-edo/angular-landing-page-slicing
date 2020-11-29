@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Timeline } from 'src/assets/typescript/type';
+import { Timeline, Photos } from 'src/assets/typescript/type';
 
 @Component({
   selector: 'app-timeline',
@@ -8,7 +8,8 @@ import { Timeline } from 'src/assets/typescript/type';
 })
 export class TimelineComponent implements OnInit {
   @Input() timeline?: Timeline[];
-  @Input() photos: string[] = [];
+  @Input() photos: Photos[] = [];
+  @Input() id = '';
   constructor() {}
 
   ngOnInit(): void {}
