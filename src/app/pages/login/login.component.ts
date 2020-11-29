@@ -16,16 +16,22 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.initForm();
-  }
-
-  initForm(): void {
     this.formGroup = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required]),
     });
   }
+
+  get email(): any {
+    return this.formGroup.get('email');
+  }
+
+  get password(): any {
+    return this.formGroup.get('password');
+  }
+
   loginProcess(): void {
+    this.formGroup.markAllAsTouched();
     if (this.formGroup.valid) {
       this.authService.login(this.formGroup.value).subscribe(
         (result) => {
@@ -35,8 +41,6 @@ export class LoginComponent implements OnInit {
         },
         (err) => alert(err.message)
       );
-    } else {
-      alert('Form not valid!');
     }
   }
 }
