@@ -1,0 +1,110 @@
+@mixin adsbygoogle {
+  ::ng-deep {
+    ins.adsbygoogle {
+      @content
+    }
+  }
+}
+
+:host {
+  display: block;
+
+  @include adsbygoogle {
+    // temporary, before ads ready :start
+    background-color: red;
+    // temporary, before ads ready :end
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    // overflow: hidden;
+  }
+
+  .ads-container {
+    @media (max-width: 767px) {
+      &:not(.squared) {
+        @include adsbygoogle {
+          width: 100% !important;
+          margin-left: unset !important;
+        }
+      }
+    }
+
+    button.close-button {
+      background: unset;
+      border: none;
+      position: absolute;
+      left: calc(100% + 10px);
+      top: 50%;
+      transform: translateY(-50%);
+
+      img.cross {
+        border-radius: 50%;
+        border: 2px solid #ffffffba;
+        padding: 3px;
+        width: 25px;
+        height: 25px;
+        background-color: #00000073;
+      }
+    }
+
+    &.fixed-bottom {
+      position: fixed;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999;
+      display: flex;
+      align-items: baseline;
+
+      button.close-button {
+        position: relative;
+        display: flex;
+        transform: unset;
+        left: unset;
+      }
+
+      @media (max-width: 767px) {
+        @include adsbygoogle {
+          width: calc(100vw - 57px) !important;
+        }
+      }
+    }
+
+    &.centered {
+      display: flex;
+      justify-content: center;
+    }
+
+    &.popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+
+      button.close-button {
+        position: absolute;
+        left: unset;
+        right: 20px;
+        top: 35px;
+
+        img.cross {
+          border: none;
+        }
+
+        @media (max-width: 767px) {
+          top: 20px;
+          right: 5px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        @include adsbygoogle {
+          // width: 300px !important;
+          height: 250px !important;
+        }
+      }
+    }
+
+  }
+
+}

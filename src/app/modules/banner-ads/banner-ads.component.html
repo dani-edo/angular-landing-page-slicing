@@ -1,0 +1,31 @@
+<div
+  [class]="
+    'ads-container ' +
+    type +
+    (centered ? ' centered' : '') +
+    (squared ? ' squared' : '')
+  "
+>
+  <ng-adsense
+    *ngIf="show"
+    [adClient]="adClient"
+    [adSlot]="adSlot"
+    [display]="display"
+    [width]="width"
+    [height]="height"
+    [adFormat]="adFormat"
+    [fullWidthResponsive]="true"
+    adtest='on'
+  ></ng-adsense>
+  <button
+    *ngIf="closeButton && show"
+    (click)="close()"
+    [ngClass]="'close-button'"
+  >
+    <img
+      src="./assets/images/icons/close-icon.png"
+      alt="close button"
+      class="cross"
+    />
+  </button>
+</div>
