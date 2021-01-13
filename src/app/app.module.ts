@@ -18,11 +18,6 @@ import { AuthGuard } from './auth/auth.guard';
 import { TokenInterceptorService } from './auth/token-interceptor.service';
 import { DetailComponent } from './pages/detail/detail.component';
 
-// temporary :start
-import { AdsenseModule } from 'ng2-adsense';
-import { BannerAdsComponent } from './modules/banner-ads/banner-ads.component';
-// temporary :end
-
 import { StoreModule } from '@ngrx/store';
 import { reducer } from './store/reducer';
 import { effects } from './store/effects';
@@ -41,7 +36,6 @@ import { EffectsModule } from '@ngrx/effects';
     LoginComponent,
     HomeComponent,
     DetailComponent,
-    BannerAdsComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +47,6 @@ import { EffectsModule } from '@ngrx/effects';
       list: reducer,
     } as any),
     EffectsModule.forRoot(effects as any),
-    AdsenseModule.forRoot(),
   ],
   providers: [
     AuthGuard,
