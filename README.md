@@ -1,6 +1,7 @@
 # AngularLandingPageSlicing
 
-Get random photos from Unsplash, and see detail photos (authentication required).
+A simple landing page that displays random images sourced from the API provided by unsplash.com.
+With this landing page, you can get random images and choose one of them to see the details. Of course, there are login requirements first to view images with a large view (detail).
 
 ## Dependencies
 ```
